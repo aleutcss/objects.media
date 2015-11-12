@@ -8,33 +8,33 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-media-gutter:                $inuit-base-spacing-unit !default;
-$inuit-media-gutter--tiny:            quarter($inuit-media-gutter) !default;
-$inuit-media-gutter--small:             halve($inuit-media-gutter) !default;
-$inuit-media-gutter--large:            double($inuit-media-gutter) !default;
-$inuit-media-gutter--huge:          quadruple($inuit-media-gutter) !default;
+$o-media-gutter:                $inuit-base-spacing-unit !default;
+$o-media-gutter--tiny:            quarter($o-media-gutter) !default;
+$o-media-gutter--small:             halve($o-media-gutter) !default;
+$o-media-gutter--large:            double($o-media-gutter) !default;
+$o-media-gutter--huge:          quadruple($o-media-gutter) !default;
 
-$inuit-enable-media--tiny:          false !default;
-$inuit-enable-media--small:         false !default;
-$inuit-enable-media--large:         false !default;
-$inuit-enable-media--huge:          false !default;
-$inuit-enable-media--rev:           false !default;
-$inuit-enable-media--flush:         false !default;
-$inuit-enable-media--responsive:    false !default;
-$inuit-media-collapse-at:           720px !default;
+$o-media--tiny:          false !default;
+$o-media--small:         false !default;
+$o-media--large:         false !default;
+$o-media--huge:          false !default;
+$o-media--rev:           false !default;
+$o-media--flush:         false !default;
+$o-media--responsive:    false !default;
+$o-media-collapse-at:           720px !default;
 
 
 
 
 
 .o-media {
-    @extend %clearfix;
+    @extend %u-clearfix;
     display: block;
 }
 
     .o-media__img {
         float: left;
-        margin-right: $inuit-media-gutter;
+        margin-right: $o-media-gutter;
 
         > img {
             display: block;
@@ -57,7 +57,7 @@ $inuit-media-collapse-at:           720px !default;
 
 
 
-@if ($inuit-enable-media--tiny == true) {
+@if ($o-media--tiny == true) {
 
     /**
      * Tiny media objects.
@@ -66,10 +66,10 @@ $inuit-media-collapse-at:           720px !default;
     .o-media--tiny {
 
         > .o-media__img {
-            margin-right: $inuit-media-gutter--tiny;
+            margin-right: $o-media-gutter--tiny;
         }
 
-        @if ($inuit-enable-media--rev == true) {
+        @if ($o-media--rev == true) {
 
             /**
              * Tiny reversed media objects.
@@ -79,7 +79,7 @@ $inuit-media-collapse-at:           720px !default;
 
                 > .o-media__img {
                     margin-right: 0;
-                    margin-left:  $inuit-media-gutter--tiny;
+                    margin-left:  $o-media-gutter--tiny;
                 }
 
             }
@@ -90,7 +90,7 @@ $inuit-media-collapse-at:           720px !default;
 
 }
 
-@if ($inuit-enable-media--small == true) {
+@if ($o-media--small == true) {
 
     /**
      * Small media objects.
@@ -99,10 +99,10 @@ $inuit-media-collapse-at:           720px !default;
     .o-media--small {
 
         > .o-media__img {
-            margin-right: $inuit-media-gutter--small;
+            margin-right: $o-media-gutter--small;
         }
 
-        @if ($inuit-enable-media--rev == true) {
+        @if ($o-media--rev == true) {
 
             /**
              * Small reversed media objects.
@@ -112,7 +112,7 @@ $inuit-media-collapse-at:           720px !default;
 
                 > .o-media__img {
                     margin-right: 0;
-                    margin-left:  $inuit-media-gutter--small;
+                    margin-left:  $o-media-gutter--small;
                 }
 
             }
@@ -123,7 +123,7 @@ $inuit-media-collapse-at:           720px !default;
 
 }
 
-@if ($inuit-enable-media--large == true) {
+@if ($o-media--large == true) {
 
     /**
      * Large media objects.
@@ -132,10 +132,10 @@ $inuit-media-collapse-at:           720px !default;
     .o-media--large {
 
         > .o-media__img {
-            margin-right: $inuit-media-gutter--large;
+            margin-right: $o-media-gutter--large;
         }
 
-        @if ($inuit-enable-media--rev == true) {
+        @if ($o-media--rev == true) {
 
             /**
              * Large reversed media objects.
@@ -145,7 +145,7 @@ $inuit-media-collapse-at:           720px !default;
 
                 > .media__img {
                     margin-right: 0;
-                    margin-left:  $inuit-media-gutter--large;
+                    margin-left:  $o-media-gutter--large;
                 }
 
             }
@@ -156,7 +156,7 @@ $inuit-media-collapse-at:           720px !default;
 
 }
 
-@if ($inuit-enable-media--huge == true) {
+@if ($o-media--huge == true) {
 
     /**
      * Huge media objects.
@@ -165,10 +165,10 @@ $inuit-media-collapse-at:           720px !default;
     .o-media--huge {
 
         > .o-media__img {
-            margin-right: $inuit-media-gutter--huge;
+            margin-right: $o-media-gutter--huge;
         }
 
-        @if ($inuit-enable-media--rev == true) {
+        @if ($o-media--rev == true) {
 
             /**
              * Huge reversed media objects.
@@ -178,7 +178,7 @@ $inuit-media-collapse-at:           720px !default;
 
                 > .media__img {
                     margin-right: 0;
-                    margin-left:  $inuit-media-gutter--huge;
+                    margin-left:  $o-media-gutter--huge;
                 }
 
             }
@@ -193,7 +193,7 @@ $inuit-media-collapse-at:           720px !default;
 
 
 
-@if ($inuit-enable-media--rev == true) {
+@if ($o-media--rev == true) {
 
     /**
      * Reversed image location (right instead of left). Extends `.o-media`.
@@ -204,7 +204,7 @@ $inuit-media-collapse-at:           720px !default;
         > .o-media__img {
             float: right;
             margin-right: 0;
-            margin-left: $inuit-media-gutter;
+            margin-left: $o-media-gutter;
         }
 
     }
@@ -215,7 +215,7 @@ $inuit-media-collapse-at:           720px !default;
 
 
 
-@if ($inuit-enable-media--flush == true) {
+@if ($o-media--flush == true) {
 
     /**
      * Flush media objects have no space between the image- and text-content.
@@ -236,7 +236,7 @@ $inuit-media-collapse-at:           720px !default;
 
 
 
-@if ($inuit-enable-media--responsive == true) {
+@if ($o-media--responsive == true) {
 
     /**
      * Responsive media objects.
@@ -251,7 +251,7 @@ $inuit-media-collapse-at:           720px !default;
      *    state is the exception, rather than the rule.
      */
 
-    @media screen and (max-width: $inuit-media-collapse-at) {
+    @media screen and (max-width: $o-media-collapse-at) {
 
         .o-media--responsive {
 
@@ -261,11 +261,11 @@ $inuit-media-collapse-at:           720px !default;
             > .o-media__img {
                 float: none;
                 margin-right: 0;
-                margin-bottom: $inuit-media-gutter;
+                margin-bottom: $o-media-gutter;
                 margin-left:  0;
             }
 
-            @if ($inuit-enable-media--tiny == true) {
+            @if ($o-media--tiny == true) {
 
                 /**
                  * Tiny responsive media objects.
@@ -280,14 +280,14 @@ $inuit-media-collapse-at:           720px !default;
                     > .o-media__img {
                         margin-right: 0;
                         margin-left:  0;
-                        margin-bottom: $inuit-media-gutter--tiny;
+                        margin-bottom: $o-media-gutter--tiny;
                     }
 
                 }
 
             }
 
-            @if ($inuit-enable-media--small == true) {
+            @if ($o-media--small == true) {
 
                 /**
                  * Small responsive media objects.
@@ -302,14 +302,14 @@ $inuit-media-collapse-at:           720px !default;
                     > .o-media__img {
                         margin-right: 0;
                         margin-left:  0;
-                        margin-bottom: $inuit-media-gutter--small;
+                        margin-bottom: $o-media-gutter--small;
                     }
 
                 }
 
             }
 
-            @if ($inuit-enable-media--large == true) {
+            @if ($o-media--large == true) {
 
                 /**
                  * Large responsive media objects.
@@ -324,14 +324,14 @@ $inuit-media-collapse-at:           720px !default;
                     > .o-media__img {
                         margin-right: 0;
                         margin-left:  0;
-                        margin-bottom: $inuit-media-gutter--large;
+                        margin-bottom: $o-media-gutter--large;
                     }
 
                 }
 
             }
 
-            @if ($inuit-enable-media--huge == true) {
+            @if ($o-media--huge == true) {
 
                 /**
                  * Huge responsive media objects.
@@ -346,7 +346,7 @@ $inuit-media-collapse-at:           720px !default;
                     > .o-media__img {
                         margin-right: 0;
                         margin-left:  0;
-                        margin-bottom: $inuit-media-gutter--huge;
+                        margin-bottom: $o-media-gutter--huge;
                     }
 
                 }
