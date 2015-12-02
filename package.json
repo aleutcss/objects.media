@@ -1,5 +1,5 @@
 {
-  "name": "aleut-media",
+  "name": "@aleut/aleut-media",
   "version": "0.5.0",
   "description": "Nicole Sullivan’s media object in the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.media.scss",
