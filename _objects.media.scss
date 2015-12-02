@@ -10,7 +10,7 @@
 // Predefine the variables below in order to alter and enable specific features.
 $inuit-media-namespace:             $inuit-namespace !default;
 
-$inuit-media-gutter:                $inuit-base-spacing-unit !default;
+$inuit-media-gutter:                $spacing !default;
 $inuit-media-gutter--tiny:            quarter($inuit-media-gutter) !default;
 $inuit-media-gutter--small:             halve($inuit-media-gutter) !default;
 $inuit-media-gutter--large:            double($inuit-media-gutter) !default;
