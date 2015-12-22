@@ -32,7 +32,7 @@ module via a Git Submodule, or copy and paste.
 
 Once installed, `@import` into your project in its Objects layer:
 
-    @import "bower_components/inuit-media/objects.media";
+    @import "node_modules/inuit-media/objects.media";
 
 ### Install as a Git Submodule
 
