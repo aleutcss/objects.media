@@ -15,22 +15,20 @@ aleutcss’ Media object depends on three other aleutcss modules:
 * [tools.functions](https://github.com/aleutcss/tools.functions)
 * [trumps.clearfix](https://github.com/aleutcss/trumps.clearfix)
 
-If you install the Media object using Bower, you will get these dependencies at
-the same time. If not using Bower, please be sure to install and `@import` these
+If you install the Media object using NPM, you will get these dependencies at
+the same time. If not using NPM, please be sure to install and `@import` these
 dependencies in the relevant way.
 
 ## Installation
 
-The recommended installation method is Bower, but you can install the Media
+The recommended installation method is NPM, but you can install the Media
 module via a Git Submodule, or copy and paste.
 
-### Install using Bower:
-
-    $ bower install --save inuit-media
+### 
 
 ### Install using npm:
 
-    $ npm install --save inuit-media
+    $ npm install --save-dev aleut-media
 
 Once installed, `@import` into your project in its Objects layer:
 
