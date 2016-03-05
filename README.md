@@ -52,7 +52,7 @@ For example:
             <p>Text-like content goes here.</p>
         </div>
     </div>
-```html
+```
 
 ### Modify options
 To modify the breakpoint of `.o-media--responsive` you can change this variable and set it to your preferred option before you import the `_objects.media.scss`-file.
