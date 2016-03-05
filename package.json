@@ -27,6 +27,7 @@
   "dependencies": {
     "@aleut/aleut-defaults": "~0.3.0",
     "@aleut/aleut-clearfix": "~0.3.0",
-    "@aleut/aleut-functions": "~0.3.0"
+    "@aleut/aleut-functions": "~0.3.0",
+	"@aleut/aleut-tools.clearfix": "~0.1.0"
   }
 }

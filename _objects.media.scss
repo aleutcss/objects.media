@@ -28,7 +28,7 @@ $o-media-collapse-at:           720px !default;
 
 
 .o-media {
-    @extend %u-clearfix;
+    @include clearfix;
     display: block;
 }
 
