@@ -58,6 +58,7 @@ For example:
 
 ![Example of o-media options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-media-options.png)
 
+
 ### Modify options
 To modify the breakpoint of `.o-media--responsive` you can change this variable and set it to your preferred option before you import the `_objects.media.scss`-file.
 
