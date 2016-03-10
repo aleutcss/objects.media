@@ -12,7 +12,8 @@ post](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hund
 ## Install using npm:
 
 ```ssh
-    $ npm install --save-dev @aleut/objects.media
+    $ npm install --save-dev aleut.objects.media
+
 ```
 
 ## Usage
